@@ -28,10 +28,6 @@ const stockDetails = [
     { nombre: "The Last Of Us (TLOU)", precio: 7999, stock: 0},
 ]
 
-//calcular precio final de cada uno : 74% (45% ganancias, 8% pais y 21% iva servicios digitales)
-
-
-
 //buscar/filtrar juegos con stock
 
 const searchStock = stockDetails.filter((el) => el.stock > 0 )
@@ -39,8 +35,8 @@ console.log(searchStock)
 
 //buscar productos por nombre
 
-const buscarXnombre = stockDetails.filter((el) => el.nombre.includes("FNAF"))
-console.log(buscarXnombre)
+const searchByname = stockDetails.filter((el) => el.nombre.includes("FNAF"))
+console.log(searchByname)
 
 //buscar por precio (en este ejemplo los que cuesten menos de 1000)
 
